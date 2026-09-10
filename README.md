@@ -1,0 +1,127 @@
+# EditorVideoAstra
+
+Guía de estilo para producir videos verticales de **Velonet** con una edición moderna, clara, dinámica y replicable.
+
+Este repositorio documenta las reglas visuales, narrativas y técnicas que deben seguirse al editar piezas corporativas, promocionales e informativas. El objetivo es que diferentes editores —humanos o asistidos por IA— puedan obtener resultados consistentes.
+
+## Documento principal
+
+La especificación completa está en:
+
+➡️ [ESTILO_VELONET_VIDEO_VERTICAL_REPLICABLE.md](./ESTILO_VELONET_VIDEO_VERTICAL_REPLICABLE.md)
+
+Incluye:
+
+- Formato vertical, resolución y zonas seguras.
+- Paleta de color y jerarquía visual.
+- Tipografías, subtítulos y títulos con relieve 2.5D.
+- Diseño y animación de la tarjeta inicial.
+- Animación de iconos y recursos gráficos.
+- Zoom in, zoom out, punch-in y reencuadres.
+- Transiciones y efectos básicos de video.
+- Colorización y diseño sonoro.
+- Organización recomendada de pistas en DaVinci Resolve.
+- Parámetros reutilizables y lista de control final.
+
+## Principios esenciales
+
+1. **La narración manda:** cada recurso debe reforzar una frase, gesto o acción.
+2. **El rostro es prioritario:** ningún título, icono o gráfico debe cubrirlo.
+3. **Una idea por escena:** evitar competir por la atención del espectador.
+4. **Dinamismo con intención:** usar movimiento cuando mejore el ritmo o la comprensión.
+5. **Consistencia de marca:** respetar la paleta, tipografía y jerarquía definidas.
+6. **Edición segura:** conservar una copia antes de modificar un montaje aprobado.
+
+## Referencia rápida
+
+| Elemento | Regla base |
+|---|---|
+| Formato | 9:16, 1080 × 1920 px, 30 fps |
+| Tarjetas completas | Solo una, al inicio |
+| Títulos | Cortos, en mayúsculas y fuera del rostro |
+| Fuente principal | Gobold Regular |
+| Fuente secundaria | Montserrat SemiBold |
+| Color de marca | Morado `#5D2D91` |
+| Color de énfasis | Naranja `#FFAA3D` |
+| Zoom progresivo | 100 % a 103–106 % |
+| Punch-in | 100 % a 104–108 % |
+| Transición predeterminada | Disolución de 6–10 fotogramas |
+| Música | Baja, aproximadamente −30 a −34 LUFS |
+| Voz | Prioritaria, objetivo aproximado de −16 LUFS |
+
+## Cómo utilizar el sistema
+
+### 1. Preparar el material
+
+- Reunir videos, voz, música, efectos, imágenes y logos.
+- Identificar la duración y calidad de cada archivo.
+- Transcribir la voz y marcar frases, pausas, fechas y palabras clave.
+- Revisar los gestos y el espacio disponible alrededor de la persona.
+
+### 2. Construir el montaje
+
+- Editar primero la voz y la historia.
+- Seleccionar las tomas por significado, expresión y gesto.
+- Mantener pausas naturales y retirar silencios accidentales.
+- Guardar una copia antes de realizar cambios estructurales.
+
+### 3. Aplicar el diseño
+
+- Crear una sola tarjeta inicial.
+- Mostrar palabras clave como títulos flotantes.
+- Ubicar iconos en relación con los gestos de la persona.
+- Incorporar subtítulos durante toda la voz.
+- Respetar las zonas seguras y evitar cubrir el rostro.
+
+### 4. Añadir dinamismo
+
+- Usar zoom in para enfatizar beneficios o frases importantes.
+- Usar zoom out para revelar contexto o liberar espacio.
+- Aplicar punch-in únicamente en palabras clave.
+- Animar títulos, iconos y gráficos con entradas y salidas suaves.
+- Reservar las transiciones llamativas para cambios reales de bloque.
+
+### 5. Finalizar
+
+- Igualar color y proteger los tonos de piel.
+- Mantener la música detrás de la voz.
+- Sincronizar efectos con apariciones y cortes.
+- Revisar el video completo después de exportarlo.
+- Confirmar que el archivo final contiene los últimos cambios manuales.
+
+## Estructura recomendada en DaVinci Resolve
+
+```text
+V4  Máscaras o recursos extraordinarios
+V3  Títulos, subtítulos, iconos y gráficos
+V2  Transiciones y recursos de apoyo
+V1  Montaje principal
+
+A5  Efectos adicionales
+A4  Efectos de aparición
+A3  Música
+A2  Voz / canal adicional
+A1  Voz principal
+```
+
+## Antes de entregar
+
+- [ ] El formato es vertical 9:16.
+- [ ] Ningún elemento cubre el rostro.
+- [ ] Los subtítulos son legibles y están sincronizados.
+- [ ] Los zooms no cortan cabeza, manos u objetos relevantes.
+- [ ] Los iconos aparecen sincronizados con la voz o el gesto.
+- [ ] La música no compite con la voz.
+- [ ] Los efectos coinciden con los cortes y apariciones.
+- [ ] El color es consistente entre escenas.
+- [ ] Se conservaron los cambios manuales aprobados.
+- [ ] Se revisó la exportación completa.
+
+## Alcance actual
+
+Actualmente el repositorio contiene la **documentación del sistema de edición**. No incluye videos, audios, credenciales, material privado ni archivos temporales de DaVinci Resolve.
+
+## Licencia y uso
+
+Antes de reutilizar públicamente activos, logos, fuentes, música o efectos, verifica que cuentas con los permisos y licencias correspondientes. Este repositorio define el estilo de edición; no concede derechos sobre recursos de terceros.
+
