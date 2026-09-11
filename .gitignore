@@ -3,6 +3,7 @@
 .env
 .env.*
 !.env.example
+ESTILO_CLIENTE_LOCAL.md
 __pycache__/
 *.pyc
 MATERIAL/

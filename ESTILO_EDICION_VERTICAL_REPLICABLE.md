@@ -1,21 +1,93 @@
-# SISTEMA REPLICABLE DE EDICIÓN VERTICAL — VELONET
+# SISTEMA REPLICABLE DE EDICIÓN VERTICAL
 
-## 0. ⛔ REGLA OBLIGATORIA: preguntar ANTES de empezar cualquier cosa
+## 0. ⛔ Arranque obligatorio de un encargo audiovisual
 
-Antes de empezar CUALQUIER trabajo, preguntar SIEMPRE estas 6 cosas y esperar las respuestas:
+Seguir este orden antes de analizar materiales o editar:
 
-1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve (instalado, registrado y conectado)?
-2. **Formato:** ¿Qué formato necesitas (proporción, resolución, fps y plataforma de destino)?
-3. **Encargo:** ¿Qué quieres que se haga (escena, textos, cortes, efectos y duración)?
-4. **Materiales:** ¿Dónde está el video o los materiales (ruta exacta)?
-5. **DaVinci Resolve:** ¿DaVinci Resolve ya está abierto (con un proyecto disponible)?
-6. **API de Gemini:** ¿Ya está OK la API de Gemini para proceder?
+1. Cargar o crear el perfil local de marca mediante la sección 0.1.
+2. Confirmar los datos operativos del encargo mediante la sección 0.2.
+3. Resolver y verificar cualquier requisito técnico pendiente.
+4. Aplicar la prioridad de instrucciones definida en la sección 0.3.
 
-No empezar sin las 6 respuestas ni asumirlas por defecto. Dentro del mismo encargo no se
-repiten en cada paso; en un encargo nuevo se vuelven a preguntar. Verificar la conexión
-real del MCP y de Gemini antes de usarlos.
-Si se solicita instalar el MCP, completar primero esa instalación y comprobarla antes
-de editar. El procedimiento reproducible está en [MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
+### 0.1 Primera ejecución con un cliente: entrevista de marca obligatoria
+
+Antes de iniciar el **primer encargo audiovisual de cada cliente**, comprobar si existe
+`ESTILO_CLIENTE_LOCAL.md` en la raíz del proyecto de trabajo.
+
+- Si existe y su campo `Estado` es `CONFIRMADO`, leerlo completo antes de proponer o
+  ejecutar la edición.
+- Si no existe, está incompleto o su estado no es `CONFIRMADO`, detener el montaje,
+  realizar la entrevista de marca y esperar las respuestas.
+- Esta entrevista se realiza una sola vez por cliente. En encargos posteriores se
+  reutiliza el archivo local y solo se pregunta por información ausente, cambios de
+  marca o excepciones específicas del nuevo video.
+- Esta regla se aplica a encargos audiovisuales reales. No es necesario realizar la
+  entrevista para mantener la documentación o instalar herramientas del repositorio.
+
+#### Preguntas mínimas de marca
+
+Preguntar en un único bloque claro:
+
+1. **Marca e identidad:** ¿Cuál es el nombre de la marca y qué personalidad debe
+   transmitir (corporativa, cercana, juvenil, premium, técnica u otra)?
+2. **Colores:** ¿Cuáles son los colores primario, secundario y de énfasis? Solicitar
+   códigos HEX/RGB cuando existan y preguntar qué colores están prohibidos.
+3. **Logos:** ¿Dónde están los archivos oficiales? Preguntar qué versiones existen,
+   cuándo utilizar cada una, área de seguridad, tamaño mínimo y usos prohibidos.
+4. **Tipo de edición:** ¿Qué estilo desea el cliente (corporativo, dinámico para redes,
+   cinematográfico, tutorial, minimalista, gaming u otro)? Preguntar ritmo, nivel de
+   efectos, transiciones, referencias y recursos que no desea utilizar.
+5. **Tipografía:** ¿Qué fuentes oficiales deben utilizarse para títulos, cuerpo y
+   subtítulos? Solicitar archivos o enlaces autorizados y definir alternativas.
+6. **Lenguaje gráfico:** ¿Cómo deben verse tarjetas, iconos, bordes, sombras,
+   ilustraciones, animaciones y llamadas a la acción?
+7. **Subtítulos:** ¿Cuál es su posición, tamaño, color, resaltado y comportamiento?
+8. **Audio:** ¿Qué estilo musical, intensidad y efectos sonoros están permitidos?
+9. **Formato habitual:** ¿Qué plataformas, proporciones, resoluciones y fps utiliza?
+10. **Referencias y restricciones:** ¿Hay manual de marca, videos de referencia,
+    requisitos legales, créditos o elementos obligatorios/prohibidos?
+
+Si el cliente desconoce un valor, proponer como máximo tres opciones y registrar la
+que confirme. No inferir una identidad definitiva a partir de un solo logo o video.
+
+#### Guardado obligatorio
+
+Después de recibir y confirmar las respuestas:
+
+1. Copiar `ESTILO_CLIENTE_LOCAL.example.md` como `ESTILO_CLIENTE_LOCAL.md` en la raíz
+   del proyecto de trabajo.
+2. Reemplazar todos los marcadores por respuestas concretas; no dejar decisiones
+   importantes como “por definir”.
+3. Usar rutas relativas para logos, fuentes y recursos siempre que sea posible.
+4. Establecer `Estado: CONFIRMADO`, registrar la fecha y resumir la configuración al
+   cliente antes de editar.
+5. No subir `ESTILO_CLIENTE_LOCAL.md` al repositorio: puede contener activos, rutas o
+   restricciones privadas. El `.gitignore` de este proyecto ya lo excluye.
+
+No guardar claves API, contraseñas, tokens, datos personales innecesarios ni material
+confidencial dentro del perfil.
+
+### 0.2 Confirmación operativa de cada encargo
+
+Después de cargar o confirmar el perfil de marca, preguntar estas seis cosas y esperar
+las respuestas:
+
+1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve (instalado,
+   registrado y conectado)?
+2. **Formato:** ¿Qué formato necesita este video (proporción, resolución, fps y
+   plataforma de destino)?
+3. **Encargo:** ¿Qué se debe hacer (escenas, textos, cortes, efectos y duración)?
+4. **Materiales:** ¿Dónde están el video y los demás materiales (ruta exacta)?
+5. **DaVinci Resolve:** ¿Ya está abierto con un proyecto disponible?
+6. **API de Gemini:** ¿Ya está OK para proceder?
+
+No empezar el montaje sin las seis respuestas ni asumirlas. Dentro del mismo encargo no
+se repiten en cada paso; en un encargo nuevo se vuelven a preguntar. Verificar la
+conexión real del MCP y de Gemini antes de usarlos.
+
+Si se solicita instalar el MCP, completar primero la instalación y comprobarla antes de
+editar. El procedimiento reproducible está en
+[MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
 
 Gemini debe comprender el video real y proponer tiempos verificables antes de recortar.
 DaVinci Resolve y su MCP realizan el montaje. En clips de videojuegos, adaptar esta guía
@@ -24,9 +96,30 @@ personajes ni perder el desenlace. Mantener separados combates diferentes.
 
 Las claves API se configuran localmente y nunca se suben a GitHub.
 
+### 0.3 Prioridad y sobrescritura del estilo
+
+Aplicar las reglas en este orden, de mayor a menor prioridad:
+
+1. Instrucción explícita del cliente para el encargo actual.
+2. `ESTILO_CLIENTE_LOCAL.md` con estado `CONFIRMADO`.
+3. Brief o guion aprobado del proyecto actual.
+4. Este sistema general de edición.
+5. Valores de respaldo de la herramienta utilizada.
+
+Por tanto, el archivo local **sobrescribe** las decisiones visuales predeterminadas de
+esta guía: colores, logos, tipografías, ritmo, densidad, transiciones, tratamiento de
+títulos, iconografía, música y efectos. No sobrescribe requisitos de seguridad,
+legibilidad, licencias, conservación del material original ni instrucciones explícitas
+más recientes del cliente.
+
+Ante una contradicción entre la petición actual y el perfil local, no elegir en silencio:
+mostrar la diferencia, pedir confirmación y actualizar el perfil solo si el cliente desea
+que el cambio sea permanente. Para una excepción de un único video, conservar el perfil
+y registrar la excepción en el brief del encargo.
+
 ## 1. Propósito
 
-Este documento define un sistema estable para editar videos verticales corporativos de Velonet con un acabado moderno, dinámico y profesional.
+Este documento define un sistema estable para editar videos verticales con un acabado moderno, dinámico y profesional, adaptable a cualquier cliente mediante `ESTILO_CLIENTE_LOCAL.md`.
 
 Debe aplicarse a campañas, promociones, anuncios informativos, tutoriales breves, novedades de servicio y llamados a la acción.
 
@@ -34,8 +127,8 @@ El resultado debe sentirse:
 
 - Claro y fácil de seguir.
 - Dinámico, pero no sobrecargado.
-- Coherente con la identidad de Velonet.
-- Cercano, tecnológico y confiable.
+- Coherente con la identidad confirmada del cliente.
+- Alineado con el tono y la personalidad definidos en el perfil local.
 - Diseñado alrededor de la narración y de la persona en cámara.
 
 > **Regla central:** cada movimiento, texto, icono, transición o efecto debe reforzar una idea concreta. No se agregan efectos únicamente para llenar la pantalla.
@@ -92,22 +185,25 @@ Si dos elementos compiten, se elimina o reduce el de menor prioridad.
 
 ### Colores principales
 
+Los colores proceden de `ESTILO_CLIENTE_LOCAL.md`. No utilizar la paleta de otro cliente
+como valor predeterminado. El perfil debe definir, como mínimo:
+
 | Uso | Color |
 |---|---|
-| Morado corporativo | `#5D2D91` |
-| Morado oscuro | `#211331` |
-| Morado de profundidad | `#482247` |
-| Naranja de énfasis | `#FFAA3D` |
-| Dorado luminoso | `#FFF0C5` |
-| Blanco principal | `#FFFFFF` |
-| Blanco secundario | `#EEE8F6` |
-| Negro de contorno | `#140C20` |
+| Primario | `COLOR_PRIMARIO` |
+| Secundario | `COLOR_SECUNDARIO` |
+| Énfasis | `COLOR_ACENTO` |
+| Fondo claro | `COLOR_FONDO_CLARO` |
+| Fondo oscuro | `COLOR_FONDO_OSCURO` |
+| Texto principal | `COLOR_TEXTO` |
+| Contorno/sombra | `COLOR_CONTORNO` |
 
 ### Reglas de uso
 
-- Morado: base de marca, sombras y paneles.
-- Naranja/dorado: beneficios, fechas, verbos de acción y palabras clave.
-- Blanco: información principal y subtítulos.
+- Primario: base de marca, títulos, paneles o elementos dominantes.
+- Secundario: apoyo y profundidad.
+- Énfasis: beneficios, fechas, verbos de acción y palabras clave.
+- Texto y contorno: legibilidad sobre fondos claros y oscuros.
 - No introducir colores ajenos a la paleta salvo que pertenezcan a un activo oficial.
 - Los degradados deben ser suaves y utilizar tonos de la misma familia.
 
@@ -117,10 +213,14 @@ Si dos elementos compiten, se elimina o reduce el de menor prioridad.
 
 ### Fuentes
 
-- **Títulos principales:** Gobold Regular.
-- **Alternativa de títulos:** Montserrat ExtraBold o Black.
-- **Subtítulos y textos auxiliares:** Montserrat SemiBold.
-- **Texto secundario:** Montserrat Medium.
+- **Títulos principales:** `FUENTE_TITULOS` del perfil local.
+- **Alternativa de títulos:** `FUENTE_TITULOS_ALTERNATIVA`.
+- **Subtítulos y textos auxiliares:** `FUENTE_SUBTITULOS`.
+- **Texto secundario:** `FUENTE_CUERPO`.
+
+Si el cliente no posee tipografías, proponer opciones accesibles y confirmar una antes
+de editar. Montserrat puede ofrecerse como alternativa legible, pero no se adopta sin
+confirmación.
 
 ### Tratamiento de títulos principales
 
@@ -133,7 +233,7 @@ Si dos elementos compiten, se elimina o reduce el de menor prioridad.
 
 ### Tratamiento de subtítulos
 
-- Montserrat SemiBold.
+- Utilizar `FUENTE_SUBTITULOS` definida en el perfil local.
 - Blanco con contorno oscuro de 2–4 px, según resolución.
 - Sombra discreta únicamente si el fondo lo requiere.
 - Una o dos líneas, centradas.

@@ -1,9 +1,13 @@
 # DaVinci Resolve MCP + Gemini
 
-## ⛔ REGLA OBLIGATORIA: preguntar ANTES de empezar cualquier cosa
+Antes de este protocolo técnico, cargar `ESTILO_CLIENTE_LOCAL.md` o completar la
+entrevista de primera ejecución definida en `ESTILO_EDICION_VERTICAL_REPLICABLE.md`.
+La configuración local de marca determina el estilo visual del montaje.
 
-Antes de empezar CUALQUIER trabajo —editar, analizar, cortar, renderizar, instalar
-o incluso abrir los materiales— preguntar SIEMPRE estas 6 cosas y esperar las respuestas:
+## ⛔ REGLA OBLIGATORIA: preguntar ANTES de un encargo audiovisual
+
+Después de cargar o crear el perfil local de marca, y antes de editar, analizar, cortar,
+renderizar o abrir los materiales, preguntar estas seis cosas y esperar las respuestas:
 
 1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve (instalado, registrado y conectado)?
 2. **Formato:** ¿Qué formato necesitas (proporción, resolución, fps y plataforma de destino)?

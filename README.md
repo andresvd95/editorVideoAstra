@@ -1,9 +1,10 @@
 # EditorVideoAstra
 
-## ⛔ Regla obligatoria: preguntar ANTES de empezar cualquier cosa
+## ⛔ Protocolo obligatorio antes de editar
 
-Antes de empezar CUALQUIER trabajo, el editor o asistente de IA debe preguntar SIEMPRE
-estas 6 cosas y esperar las respuestas:
+En el primer encargo del cliente, comprobar o crear primero `ESTILO_CLIENTE_LOCAL.md`
+mediante la entrevista de marca explicada más abajo. Después, en cada encargo audiovisual,
+preguntar estas seis cosas y esperar las respuestas:
 
 1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve?
 2. **Formato:** ¿Qué formato necesitas?
@@ -20,9 +21,35 @@ su registro para Codex y el protocolo de análisis con Gemini.
 Instalación y flujo: [MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
 Clonar con `git clone --recurse-submodules` para descargar también el MCP.
 
-Guía de estilo para producir videos verticales de **Velonet** con una edición moderna, clara, dinámica y replicable.
+Sistema general para producir videos verticales con una edición moderna, clara,
+dinámica y adaptable a la identidad de cada cliente.
 
 Este repositorio documenta las reglas visuales, narrativas y técnicas que deben seguirse al editar piezas corporativas, promocionales e informativas. El objetivo es que diferentes editores —humanos o asistidos por IA— puedan obtener resultados consistentes.
+
+## Primera vez con un cliente
+
+Antes de editar, el asistente debe buscar `ESTILO_CLIENTE_LOCAL.md` en el proyecto de
+trabajo.
+
+1. Si no existe, pregunta al cliente por **colores, logos, tipo de edición, tipografía,
+   lenguaje gráfico, subtítulos, audio, formatos y restricciones**.
+2. Espera las respuestas y copia
+   [`ESTILO_CLIENTE_LOCAL.example.md`](./ESTILO_CLIENTE_LOCAL.example.md) como
+   `ESTILO_CLIENTE_LOCAL.md`.
+3. Completa el perfil, lo resume al cliente y marca `Estado: CONFIRMADO`.
+4. En los siguientes encargos carga el perfil automáticamente y no repite la entrevista,
+   salvo que falte información o la marca haya cambiado.
+
+El perfil real queda excluido de Git. Sus reglas de marca sobrescriben el estilo general,
+pero no una instrucción explícita más reciente del cliente ni requisitos de seguridad,
+legibilidad, licencias o conservación del material.
+
+### Orden de prioridad
+
+1. Instrucción del cliente para el encargo actual.
+2. `ESTILO_CLIENTE_LOCAL.md` confirmado.
+3. Brief o guion del proyecto.
+4. Sistema general de este repositorio.
 
 ## Documento principal
 
@@ -59,10 +86,10 @@ Incluye:
 | Formato | 9:16, 1080 × 1920 px, 30 fps |
 | Tarjetas completas | Solo una, al inicio |
 | Títulos | Cortos, en mayúsculas y fuera del rostro |
-| Fuente principal | Gobold Regular |
-| Fuente secundaria | Montserrat SemiBold |
-| Color de marca | Morado `#5D2D91` |
-| Color de énfasis | Naranja `#FFAA3D` |
+| Fuente principal | La definida en el perfil local |
+| Fuente secundaria | La definida en el perfil local |
+| Colores de marca | Los definidos en el perfil local |
+| Color de énfasis | El definido en el perfil local |
 | Zoom progresivo | 100 % a 103–106 % |
 | Punch-in | 100 % a 104–108 % |
 | Transición predeterminada | Disolución de 6–10 fotogramas |
@@ -139,7 +166,10 @@ A1  Voz principal
 
 ## Alcance actual
 
-El repositorio contiene la documentación del sistema de edición, el MCP de DaVinci Resolve como submódulo y scripts de instalación/verificación. No incluye videos, audios, credenciales, material privado ni archivos temporales de DaVinci Resolve.
+El repositorio contiene la documentación, la plantilla pública del perfil de cliente, el
+MCP de DaVinci Resolve como submódulo y scripts de instalación/verificación. No incluye
+perfiles reales de clientes, videos, audios, credenciales, material privado ni archivos
+temporales de DaVinci Resolve.
 
 ## Licencia y uso
 

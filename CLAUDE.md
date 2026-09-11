@@ -2,9 +2,19 @@
 
 Este repositorio usa el mismo protocolo que `AGENTS.md`. Leerlo completo antes de trabajar.
 
-## ⛔ REGLA OBLIGATORIA: preguntar ANTES de empezar cualquier cosa
+## ⛔ REGLA OBLIGATORIA: cargar o crear el perfil de marca
 
-Antes de empezar CUALQUIER trabajo, preguntar SIEMPRE estas 6 cosas y esperar las respuestas:
+Antes del primer encargo audiovisual de un cliente, buscar `ESTILO_CLIENTE_LOCAL.md`.
+Si no existe o no está confirmado, realizar la entrevista de marca definida en
+`ESTILO_EDICION_VERTICAL_REPLICABLE.md`, esperar las respuestas y completar el archivo
+desde `ESTILO_CLIENTE_LOCAL.example.md`. En encargos posteriores, reutilizarlo.
+
+El perfil local sobrescribe el estilo visual general, salvo instrucciones explícitas más
+recientes del cliente y requisitos de seguridad, legibilidad, licencias o conservación.
+
+## ⛔ REGLA OBLIGATORIA: preguntar ANTES de empezar un encargo audiovisual
+
+Antes de empezar CUALQUIER encargo audiovisual, preguntar SIEMPRE estas 6 cosas y esperar las respuestas:
 
 1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve (instalado, registrado y conectado)?
 2. **Formato:** ¿Qué formato necesitas (proporción, resolución, fps y plataforma de destino)?
