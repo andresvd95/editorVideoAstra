@@ -1,5 +1,29 @@
 # SISTEMA REPLICABLE DE EDICIÓN VERTICAL — VELONET
 
+## 0. ⛔ REGLA OBLIGATORIA: preguntar ANTES de empezar cualquier cosa
+
+Antes de empezar CUALQUIER trabajo, preguntar SIEMPRE estas 6 cosas y esperar las respuestas:
+
+1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve (instalado, registrado y conectado)?
+2. **Formato:** ¿Qué formato necesitas (proporción, resolución, fps y plataforma de destino)?
+3. **Encargo:** ¿Qué quieres que se haga (escena, textos, cortes, efectos y duración)?
+4. **Materiales:** ¿Dónde está el video o los materiales (ruta exacta)?
+5. **DaVinci Resolve:** ¿DaVinci Resolve ya está abierto (con un proyecto disponible)?
+6. **API de Gemini:** ¿Ya está OK la API de Gemini para proceder?
+
+No empezar sin las 6 respuestas ni asumirlas por defecto. Dentro del mismo encargo no se
+repiten en cada paso; en un encargo nuevo se vuelven a preguntar. Verificar la conexión
+real del MCP y de Gemini antes de usarlos.
+Si se solicita instalar el MCP, completar primero esa instalación y comprobarla antes
+de editar. El procedimiento reproducible está en [MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
+
+Gemini debe comprender el video real y proponer tiempos verificables antes de recortar.
+DaVinci Resolve y su MCP realizan el montaje. En clips de videojuegos, adaptar esta guía
+a la acción: textos llamativos, zoom in/out y efectos de impacto puntuales, sin tapar
+personajes ni perder el desenlace. Mantener separados combates diferentes.
+
+Las claves API se configuran localmente y nunca se suben a GitHub.
+
 ## 1. Propósito
 
 Este documento define un sistema estable para editar videos verticales corporativos de Velonet con un acabado moderno, dinámico y profesional.

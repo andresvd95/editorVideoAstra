@@ -1,0 +1,3 @@
+[submodule "mcp/davinci-resolve"]
+	path = mcp/davinci-resolve
+	url = https://github.com/samuelgursky/davinci-resolve-mcp.git

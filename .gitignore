@@ -1,0 +1,17 @@
+.venv*/
+.local/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+MATERIAL/
+wow-rescate/review/
+wow-rescate/exports/
+wow-rescate/analysis/
+*.mp4
+*.mov
+*.wav
+*.drp
+*.drt
+

@@ -1,5 +1,25 @@
 # EditorVideoAstra
 
+## ⛔ Regla obligatoria: preguntar ANTES de empezar cualquier cosa
+
+Antes de empezar CUALQUIER trabajo, el editor o asistente de IA debe preguntar SIEMPRE
+estas 6 cosas y esperar las respuestas:
+
+1. **MCP de DaVinci Resolve:** ¿Ya está OK el MCP de DaVinci Resolve?
+2. **Formato:** ¿Qué formato necesitas?
+3. **Encargo:** ¿Qué quieres que se haga?
+4. **Materiales:** ¿Dónde está el video o los materiales?
+5. **DaVinci Resolve:** ¿DaVinci Resolve ya está abierto?
+6. **API de Gemini:** ¿Ya está OK la API de Gemini para proceder?
+
+No empezar sin las 6 respuestas ni asumirlas por defecto. Detalle y verificación
+técnica en [MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
+
+El repositorio incluye el MCP oficial como submódulo en `mcp/davinci-resolve`,
+su registro para Codex y el protocolo de análisis con Gemini.
+Instalación y flujo: [MCP_DAVINCI_GEMINI.md](MCP_DAVINCI_GEMINI.md).
+Clonar con `git clone --recurse-submodules` para descargar también el MCP.
+
 Guía de estilo para producir videos verticales de **Velonet** con una edición moderna, clara, dinámica y replicable.
 
 Este repositorio documenta las reglas visuales, narrativas y técnicas que deben seguirse al editar piezas corporativas, promocionales e informativas. El objetivo es que diferentes editores —humanos o asistidos por IA— puedan obtener resultados consistentes.
@@ -119,7 +139,7 @@ A1  Voz principal
 
 ## Alcance actual
 
-Actualmente el repositorio contiene la **documentación del sistema de edición**. No incluye videos, audios, credenciales, material privado ni archivos temporales de DaVinci Resolve.
+El repositorio contiene la documentación del sistema de edición, el MCP de DaVinci Resolve como submódulo y scripts de instalación/verificación. No incluye videos, audios, credenciales, material privado ni archivos temporales de DaVinci Resolve.
 
 ## Licencia y uso
 
