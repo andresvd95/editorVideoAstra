@@ -28,7 +28,7 @@ Este repositorio documenta las reglas visuales, narrativas y técnicas que deben
 
 La especificación completa está en:
 
-➡️ [ESTILO_VELONET_VIDEO_VERTICAL_REPLICABLE.md](./ESTILO_VELONET_VIDEO_VERTICAL_REPLICABLE.md)
+➡️ [ESTILO_EDICION_VERTICAL_REPLICABLE.md](./ESTILO_EDICION_VERTICAL_REPLICABLE.md)
 
 Incluye:
 

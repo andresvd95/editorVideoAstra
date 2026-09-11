@@ -21,7 +21,7 @@ o incluso abrir los materiales— preguntar SIEMPRE estas 6 cosas y esperar las 
 Para instalar el MCP desde cero, una respuesta «todavía no está instalado, instálalo»
 autoriza la instalación; verificar la conexión antes de editar en Resolve.
 
-Leer `ESTILO_VELONET_VIDEO_VERTICAL_REPLICABLE.md` y `MCP_DAVINCI_GEMINI.md`.
+Leer `ESTILO_EDICION_VERTICAL_REPLICABLE.md` y `MCP_DAVINCI_GEMINI.md`.
 Usar Gemini para comprender el video y marcar tiempos verificables. Un minuto
 aproximado del usuario es una pista, nunca un límite de corte ya confirmado.
 Realizar el montaje en DaVinci Resolve mediante su MCP. Conservar el original y
